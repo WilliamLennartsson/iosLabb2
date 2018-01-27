@@ -13,6 +13,7 @@
 		7221F2C52017939000BA0600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7221F2C42017939000BA0600 /* Assets.xcassets */; };
 		7221F2C82017939000BA0600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7221F2C62017939000BA0600 /* LaunchScreen.storyboard */; };
 		7221F2CB2017939000BA0600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7221F2CA2017939000BA0600 /* main.m */; };
+		7293FE3D201B2D3B00995F4A /* questionArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7293FE3C201B2D3B00995F4A /* questionArrayObject.m */; };
 		72EF0224201795F200DD51F9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EF0223201795F200DD51F9 /* GameViewController.m */; };
 		72EF02272017961900DD51F9 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EF02262017961900DD51F9 /* GameModel.m */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,8 @@
 		7221F2C72017939000BA0600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7221F2C92017939000BA0600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7221F2CA2017939000BA0600 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7293FE3B201B2D3B00995F4A /* questionArrayObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = questionArrayObject.h; sourceTree = "<group>"; };
+		7293FE3C201B2D3B00995F4A /* questionArrayObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = questionArrayObject.m; sourceTree = "<group>"; };
 		72EF0222201795F200DD51F9 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		72EF0223201795F200DD51F9 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		72EF02252017961900DD51F9 /* GameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				72EF0223201795F200DD51F9 /* GameViewController.m */,
 				72EF02252017961900DD51F9 /* GameModel.h */,
 				72EF02262017961900DD51F9 /* GameModel.m */,
+				7293FE3B201B2D3B00995F4A /* questionArrayObject.h */,
+				7293FE3C201B2D3B00995F4A /* questionArrayObject.m */,
 				7221F2C42017939000BA0600 /* Assets.xcassets */,
 				7221F2C62017939000BA0600 /* LaunchScreen.storyboard */,
 				7221F2C92017939000BA0600 /* Info.plist */,
@@ -156,6 +161,7 @@
 				7221F2C02017939000BA0600 /* ViewController.m in Sources */,
 				72EF02272017961900DD51F9 /* GameModel.m in Sources */,
 				7221F2CB2017939000BA0600 /* main.m in Sources */,
+				7293FE3D201B2D3B00995F4A /* questionArrayObject.m in Sources */,
 				7221F2BD2017939000BA0600 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

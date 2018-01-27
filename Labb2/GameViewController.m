@@ -33,6 +33,7 @@
     
     if (self.finishedRound){
         [self newGame];
+        self.finishedRound = NO;
     }
     
     self.question = [self.engine generateQuestion];
@@ -67,27 +68,29 @@
         [self.ord exchangeObjectAtIndex:i withObjectAtIndex:n];
     }
 }
+
 -(void) updateScore {
     
     NSInteger score = self.engine.score;
     NSInteger guessApt = self.engine.guessAttempts;
     
     
-    self.scoreLabel.text = [NSString stringWithFormat:@"✓ %ld \r X %ld ", score, guessApt-score];
+    self.scoreLabel.text = [NSString stringWithFormat:@"✓ %ld \r x %ld ", score, guessApt-score];
     
     
     if (self.engine.guessAttempts == 5){
-        self.questionTextField.text = [NSString stringWithFormat:@"HOLY SHIT! You're right again! You nailed %ld out of %ld. Hit generate to play again.", (long)self.engine.score, (long)self.engine.guessAttempts];
+        self.questionTextField.text = [NSString stringWithFormat:@"HOLY SHIT! You're right again! You nailed %ld out of %ld. Hit generate to play again.", score, guessApt];
         self.finishedRound = YES;
     }
 }
+
 -(void) setUp {
     self.engine = [[GameModel alloc]init];
+    self.ord = [[NSMutableArray alloc]init];
     [self.ord addObject:@"Answer1"];
     [self.ord addObject:@"Answer2"];
     [self.ord addObject:@"Answer3"];
     [self.ord addObject:@"Answer4"];
-    //Lägg knapparna i en array för mindre kod
     [self.scoreLabel setNumberOfLines:3];
     self.answerBtn1.titleLabel.adjustsFontSizeToFitWidth = YES;
     self.answerBtn2.titleLabel.adjustsFontSizeToFitWidth = YES;
@@ -95,7 +98,6 @@
     self.answerBtn4.titleLabel.adjustsFontSizeToFitWidth = YES;
     [self updateScore];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
